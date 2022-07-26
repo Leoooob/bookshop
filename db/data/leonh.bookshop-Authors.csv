@@ -1,5 +1,5 @@
-ID;name
-101;Brandon Sanderson
-105;Frank Herbert
-109;Agatha Christie
-111;Stephen King
+ID;name;dateOfBirth;dateOfDeath
+101;Brandon Sanderson;1975-12-19;
+105;Frank Herbert;1920-10-08;1986-02-11
+109;Agatha Christie;1890-09-15;1976-01-12
+111;Stephen King;1947-09-21;
