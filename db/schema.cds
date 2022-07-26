@@ -7,6 +7,7 @@ entity Books : managed {
   descr  : localized String;
   author : Association to Authors;
   genre  : Association to Genres;
+  cover  : LargeBinary @Core.MediaType : 'image/png';
 }
 
 entity Authors : managed {
