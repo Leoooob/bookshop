@@ -4,28 +4,18 @@ annotate service.Books with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'ID',
-            Value : ID,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'title',
+            Label : '{i18n>Title}',
             Value : title,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'descr',
-            Value : descr,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'author',
+            Label : '{i18n>Author}',
             Value : author,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'genre_ID',
-            Value : genre_ID,
+            Value : genre.name,
+            Label : '{i18n>Genre}',
         },
     ]
 );
@@ -40,23 +30,13 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'title',
-                Value : title,
-            },
-            {
-                $Type : 'UI.DataField',
                 Label : 'descr',
                 Value : descr,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'author',
-                Value : author,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'genre_ID',
-                Value : genre_ID,
+                Value : genre.name,
+                Label : '{i18n>Genre}',
             },
             {
                 $Type : 'UI.DataField',
@@ -69,8 +49,22 @@ annotate service.Books with @(
         {
             $Type : 'UI.ReferenceFacet',
             ID : 'GeneratedFacet1',
-            Label : 'General Information',
+            Label : 'Additional Information',
             Target : '@UI.FieldGroup#GeneratedGroup1',
         },
     ]
+);
+annotate service.Books with @(
+    UI.HeaderInfo : {
+        TypeName : '{i18n>BookDetail}',
+        TypeNamePlural : '',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : title,
+        },
+        Description : {
+            $Type : 'UI.DataField',
+            Value : author,
+        },
+    }
 );
