@@ -136,7 +136,17 @@
                             "sectionLayout": "Tabs",
                             "content": {
                                 "body": {
-                                    "sections": {}
+                                    "sections": {
+                                        "Cover": {
+                                            "template": "leonh.bookshopcatalog.ext.fragment.Cover",
+                                            "position": {
+                                                "placement": "After",
+                                                "anchor": "GeneratedFacet1"
+                                            },
+                                            "title": "{i18n>cover}",
+                                            "type": "XMLFragment"
+                                        }
+                                    }
                                 }
                             }
                         }

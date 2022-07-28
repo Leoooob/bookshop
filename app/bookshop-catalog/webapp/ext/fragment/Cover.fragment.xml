@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Image
+		src="{cover}"
+		alt="Book cover"
+		width="100%"
+		height="auto" />
+</core:FragmentDefinition>
