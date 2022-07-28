@@ -17,6 +17,13 @@ annotate service.Books with @(
             Value : genre.name,
             Label : '{i18n>Genre}',
         },
+        {
+            $Type : 'UI.DataField',
+            Value : stock,
+            Label : '{i18n>Stock}',
+            Criticality : criticality,
+            CriticalityRepresentation : #WithoutIcon,
+        },
     ]
 );
 annotate service.Books with @(
@@ -68,3 +75,6 @@ annotate service.Books with @(
         },
     }
 );
+annotate service.Books with {
+    stock @Measures.Unit : 'units'
+};
