@@ -7,6 +7,9 @@ module.exports = CDS.service.impl(async function () {
     // if a single item is returned, cast to an array
     const aBooks = Array.isArray(oData) ? oData : [oData];
     aBooks.forEach((book) => {
+      // if "book" doesn't exist, e.g. the captured request is for the book cover
+      if (book === null) return;
+
       // only calculate if stock and criticality elements are 
       // requested, otherwise you cannot use the property 
       if (Object.hasOwn(book, "stock") && Object.hasOwn(book, "criticality")) {
