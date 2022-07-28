@@ -1,1 +1,21 @@
-{}
+{
+  "[development]": {
+    "auth": {
+      "passport": {
+        "strategy": "mock",
+        "users": {
+          "manager@bookshop.com": {
+            "password": "Welcome1",
+            "ID": "manager@bookshop.com",
+            "roles": ["Manager"]
+          },
+          "book.manager@bookshop.com": {
+            "password": "Welcome1",
+            "ID": "book.manager@bookshop.com",
+            "roles": ["BookManager"]
+          }
+        }
+      }
+    }
+  }
+}
