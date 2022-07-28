@@ -50,6 +50,13 @@ annotate service.Books with @(
                 Label : 'cover',
                 Value : cover,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : stock,
+                Label : 'stock',
+                Criticality : criticality,
+                CriticalityRepresentation : #WithoutIcon,
+            },
         ],
     },
     UI.Facets : [
