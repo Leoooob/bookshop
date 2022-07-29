@@ -1,0 +1,31 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.BookManager",
+      "description": "BookManager"
+    },
+    {
+      "name": "$XSAPPNAME.Manager",
+      "description": "Manager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "BookManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.BookManager"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "Manager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.Manager"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
