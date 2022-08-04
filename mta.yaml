@@ -36,7 +36,7 @@ modules:
     parameters:
       service-key:
         name: bookshop-html5-repo-host-key
-  - name: srv-api # this is the provided `bookshop-srv` URL
+  - name: srv-api
   - name: bookshop-destination
     parameters:
       content-target: true
@@ -76,7 +76,21 @@ modules:
       - leonhcatalog.zip
       name: leonhcatalog
       target-path: resources/
+    - artifacts:
+      - leonhbookshopcatalog.zip
+      name: leonhbookshopcatalog
+      target-path: resources/
 - name: leonhcatalog
+  type: html5
+  path: app/bookshop-catalog
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: leonhbookshopcatalog
   type: html5
   path: app/bookshop-catalog
   build-parameters:
@@ -132,4 +146,3 @@ build-parameters:
     - npm install --production
     - npx -p @sap/cds-dk cds build --production
     - npx rimraf gen/db/src/gen/data
-    
