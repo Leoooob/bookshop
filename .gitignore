@@ -1,3 +1,8 @@
+# Fiori app
+dist/
+resources/
+app/*/package-lock.json
+
 # CAP bookshop
 _out
 *.db
