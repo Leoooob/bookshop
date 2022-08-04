@@ -36,7 +36,7 @@ modules:
     parameters:
       service-key:
         name: bookshop-html5-repo-host-key
-  - name: srv-api
+  - name: srv-api # this is the provided `bookshop-srv` URL
   - name: bookshop-destination
     parameters:
       content-target: true
@@ -132,3 +132,4 @@ build-parameters:
     - npm install --production
     - npx -p @sap/cds-dk cds build --production
     - npx rimraf gen/db/src/gen/data
+    
