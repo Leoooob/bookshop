@@ -15,6 +15,18 @@
             "version": "0.3.6",
             "toolsId": "8b11ad15-dc70-4a79-a19c-e3d26bf6e709"
         },
+        "crossNavigation": {
+            "inbounds": {
+                "Bookshop-display": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Bookshop",
+                    "action": "display"
+                }
+            }
+        },
         "dataSources": {
             "mainService": {
                 "uri": "/browse/",
@@ -158,5 +170,9 @@
     "sap.fiori": {
         "registrationIds": [],
         "archeType": "transactional"
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "bookshop.service"
     }
 }
