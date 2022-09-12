@@ -4,7 +4,7 @@ namespace leonh.bookshop;
 entity Books : managed {
   key ID       : Integer;
   title        : localized String;
-  intro        : localized String(1024);
+  intro        : localized String;
   author       : Association to Authors;
   genre        : Association to Genres;
   gutenberg_ID : Integer;
