@@ -2,14 +2,15 @@ using { managed, sap } from '@sap/cds/common';
 namespace leonh.bookshop;
 
 entity Books : managed {
-  key ID      : Integer;
-  title       : localized String;
-  descr       : localized String;
-  author      : Association to Authors;
-  genre       : Association to Genres;
-  cover       : LargeBinary @Core.MediaType : 'image/png';
-  stock       : Integer;
-  criticality : Integer;
+  key ID       : Integer;
+  title        : localized String;
+  intro        : localized String(1024);
+  author       : Association to Authors;
+  genre        : Association to Genres;
+  gutenberg_ID : Integer;
+  cover        : LargeBinary @Core.MediaType : 'image/png';
+  stock        : Integer;
+  criticality  : Integer;
 }
 
 entity Authors : managed {

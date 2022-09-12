@@ -3,8 +3,10 @@ ID;parent_ID;name
 2;1;Fantasy
 3;1;Science Fiction
 4;1;Mystery
-5;1;Dystopia
+5;1;Gothic
 6;1;Horror
+7;1;Romance
 100;;Non-Fiction
 101;100;Biography
 102;100;Autobiography
+103;100;Poetry
