@@ -37,8 +37,8 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'descr',
-                Value : descr,
+                Label : 'intro',
+                Value : intro,
             },
             {
                 $Type : 'UI.DataField',
