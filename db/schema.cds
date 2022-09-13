@@ -7,7 +7,7 @@ entity Books : managed {
   intro        : localized String;
   author       : Association to Authors;
   genre        : Association to Genres;
-  gutenberg_ID : Integer;
+  gutenberg_ID : localized String(6);
   cover        : LargeBinary @Core.MediaType : 'image/png';
   stock        : Integer;
   criticality  : Integer;
