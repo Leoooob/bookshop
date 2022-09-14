@@ -22,15 +22,15 @@
     "private": true,
     "dependencies": {
         "@sap/cds": ">=5",
+        "@sap/xssec": "^3",
         "express": "^4",
         "hdb": "^0.19.0",
-        "@sap/xssec": "^3",
         "passport": "^0"
     },
     "devDependencies": {
-        "@sap/ux-specification": "^1.102.2",
-        "sqlite3": "^5.0.4",
-        "rimraf": "^3.0.2"
+        "@sap/ux-specification": "^1.102.5",
+        "rimraf": "^3.0.2",
+        "sqlite3": "^5.0.4"
     },
     "scripts": {
         "start": "cds run",
